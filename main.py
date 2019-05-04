@@ -14,6 +14,8 @@ from modules.config import *
 from modules.init_parking import init_parking
 from modules.init_parking_data import *
 from modules.parking_detection import parking_detection
+from modules.keyboard_options import keyboard_options
+from modules.export_reading_in_file import export_reading_in_file
 
 # ------------------------------------------------------------------------------------
 
@@ -29,9 +31,12 @@ with open(fn_yaml, 'r') as stream:
 # Init parking data
 init_parking(parking_data, parking_bounding_rects)
 
+parking_lot_state = [False] * len(parking_data)
+parking_buffer = [None] * len(parking_data)
+
 # during app is running
 while(cap.isOpened()):
-		spot = 0
+    spot = 0
     occupied = 0
     array_of_free_spaces = []
 
@@ -41,7 +46,7 @@ while(cap.isOpened()):
     ret, frame = cap.read()
 
     if ret == False:
-        print("There is error in capture, Please try again")
+        print("Capture Error")
         break
 
     # Background Subtraction
@@ -83,11 +88,8 @@ while(cap.isOpened()):
     # Keyboard options
     keyboard_options(vv_current_frame, f_out)
 
+    # Export reading in file (to reading this for API app)
+    export_reading_in_file(array_of_free_spaces)
+
 cap.release()
 cv2.destroyAllWindows()
-
-
-
-
-
-
