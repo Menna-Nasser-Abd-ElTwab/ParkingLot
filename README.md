@@ -62,6 +62,7 @@ The implementation of the desired project through the main following points:
 The configuration of the parking slots in an image or video frame can be achieved using:
   -	Edge detection using canny functions to get the benefits of white lines of the parking spots then Hough line to specifically determine the start and the end of the line in the image
   -	Then, followed by drawing contour for each parking spot and numbering the slots. So that, the numbers can be used further in the reset of the algorithm  
+
 But, the issue of the previously mentioned method is the following:
   -	Needs an image for the parking lot when it’s completely empty.
   -	If there are any obstacles in the camera view e.g.: tree – light column – etc. that will also add noise to the detection of existing parking slots either there ‘ll be slots won’t be detected or others will be detected as free when they are aren’t
