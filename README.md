@@ -33,7 +33,7 @@ One of that applications which we will consider as our project is used to solve 
 Every time you are looking to park your car you need to circle around to find out a free parking spot. That way of search is slow and frustrating. As, sometimes you aren’t the luckiest person ever and after spending time turning all around the parking area you won’t find a free space for parking as the whole parking is full of cars.
 Hence, we concern in presenting an application that will be capable of providing you with information about the parking area you are looking to park your car in if there is a free space for you or not and where exactly it’s in the parking area to go direct to it saving your effort and time
 
----.
+---
 
 License
 ------
