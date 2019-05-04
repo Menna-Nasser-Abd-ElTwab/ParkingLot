@@ -43,7 +43,6 @@ Project Impact
 ------
 > On individuals 
 -	Optimization for driver time, efforts and resources – e.g. car fuel.
-
 Through finding the suitable parking spot in the nearest parking lot. So, you won't be late on your meeting and appointments anymore
 > On community
 -	Traffic jam reduction. 
