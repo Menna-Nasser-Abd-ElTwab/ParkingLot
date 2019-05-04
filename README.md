@@ -52,9 +52,9 @@ Project Impact
   <br/>The less drivers idle, cruise and search for parking, the less the negative impact on the environment. 
   <br/>As, the decrement in number of cars turning around will also decrease the amount of vehicle oil burnt and by turn reduces the global ecological footprint.
 
----
+----------
 
-ALGORITHM PROCEDURE 
+Algorithm Procedure
 ------
 The implementation of the desired project through the main following points:
 1- DETERMINE THE PARKING SLOTS IN THE PARKING LOT
