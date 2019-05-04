@@ -27,7 +27,7 @@ you can also see this tutorial: [https://www.youtube.com/watch?v=k9em7Ey00xQ](ht
 
 Project description
 ------
-Today’s technology development has speed up so that everything around us gets smarter, integrable, faster and sometimes more complex or easier depending on the goal to be achieved.
+Today’s technology development has speed up our life so that everything around us gets smarter, integrable, faster and sometimes more complex or easier depending on the goal to be achieved.
 
 Nowadays, Image processing and computer vision involved in many real and daily life applications.
 One of that applications which we will consider as our project is used to solve a daily issue exits in our life. The where to park in parking areas situation?
