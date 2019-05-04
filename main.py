@@ -76,6 +76,13 @@ while(cap.isOpened()):
             cv2.putText(f_out, str(park['id']), (cent_id[0]-1, cent_id[1]+1), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255,255,255), 1, cv2.LINE_AA)
             cv2.putText(f_out, str(park['id']), cent_id, cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0,0,0), 1, cv2.LINE_AA)
 
+    # Display video
+    cv2.imshow('Image processing project (Parking Lot)', f_out)
+    cv2.waitKey(1)
+
+    # Keyboard options
+    keyboard_options(vv_current_frame, f_out)
+
 cap.release()
 cv2.destroyAllWindows()
 
