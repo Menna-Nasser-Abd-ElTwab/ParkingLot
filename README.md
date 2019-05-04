@@ -5,9 +5,9 @@ Team students name:
 &nbsp;
 - عبدالله محسن سيد
 &nbsp;
-- منه ناصر عبدالتواب
+- منة ناصر عبدالتواب
 &nbsp;
-- مروه راوى عبدالحميد
+- مروة راوى عبدالحميد
 &nbsp;
 - عصمت سعيد خميس
 
@@ -58,6 +58,7 @@ Algorithm Procedure
 ------
 The implementation of the desired project through the main following points: 
 >1. DETERMINE THE PARKING SLOTS IN THE PARKING LOT
+&nbsp;
   The configuration of the parking slots in an image or video frame can be achieved using:
   -	Edge detection using canny functions to get the benefits of white lines of the parking spots then Hough line to specifically determine the start and the end of the line in the image
   -	Then, followed by drawing contour for each parking spot and numbering the slots. So that, the numbers can be used further in the reset of the algorithm  
