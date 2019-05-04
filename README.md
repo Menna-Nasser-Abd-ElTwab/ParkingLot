@@ -71,11 +71,9 @@ But, the issue of the previously mentioned method is the following:
 So, it’s better to use another way that will also depend on user input (meant to be the team responsible of setting the algorithm at the parking lot to operate)
   -	The method to be used is the formation of YAML file that contains the coordinates of the parking slots in the parking lot
 >2. DETECT ANY EXISTING MOTION OR CHANGE IN THE PARKING LOT
-That step can be implemented using:
-  - Algorithm of background subtraction
-  <br/> Commonly used one is the MOG algorithm 
-  <br/> Disadvantage of that algorithm:
-    * It needs a static view. so, if the camera moved the algorithm may fail.
+That step can be implemented using background subtraction algorithms:
+  - MOG algorithm
+  <br/> Disadvantage of that algorithm is that it needs a static view. so, if the camera moved the algorithm may fail.
   - Algorithm of ROI (Region of Interest)
   <br/ > That one is used to avoid the previously mentioned issue
 
