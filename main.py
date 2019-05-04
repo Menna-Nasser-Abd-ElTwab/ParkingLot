@@ -1,14 +1,16 @@
 import yaml
 import cv2
+from modules.config import *
+from modules.init_parking import init_parking
 
-fn = "datasets/parking1.mp4"
-fn_yaml = "datasets/parking1.yml"
-fn_out = "datasets/output.avi"
-
+parking_bounding_rects = []
 
 # Read YAML data (parking space polygons)
 with open(fn_yaml, 'r') as stream:
     parking_data = yaml.load(stream)
+
+# Init parking data
+init_parking(parking_data, parking_bounding_rects)
 
 # during app is running
 while(cap.isOpened()):
