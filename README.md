@@ -58,6 +58,7 @@ Algorithm Procedure
 ------
 The implementation of the desired project through the main following points: 
 > DETERMINE THE PARKING SLOTS IN THE PARKING LOT
+
 <br/>The configuration of the parking slots in an image or video frame can be achieved using:
   -	Edge detection using canny functions to get the benefits of white lines of the parking spots then Hough line to specifically determine the start and the end of the line in the image
   -	Then, followed by drawing contour for each parking spot and numbering the slots. So that, the numbers can be used further in the reset of the algorithm  
@@ -68,6 +69,7 @@ But, the issue of the previously mentioned method is the following:
 So, it’s better to use another way that will also depend on user input (meant to be the team responsible of setting the algorithm at the parking lot to operate)
   -	The method to be used is the formation of YAML file that contains the coordinates of the parking slots in the parking lot
 > DETECT ANY EXISTING MOTION OR CHANGE IN THE PARKING LOT
+
 > ASSIGN THE FREE AND THE BUSY PARKING SLOTS
 
 
