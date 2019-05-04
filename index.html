@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parking Lot (Image processing project)</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
+</head>
+<body>
+	<div class="container">
+		<h2 class="text-center main-title text-primary">Parking lot (Image processing project)</h2>
+		<div class="row main-row">
+			<div class="col-md-6 text-center left-sidebar">
+				<div class="mini-title">
+					<i class="fa fa-globe-europe"></i><br>
+					Total free places
+				</div>
+				<div id="freeSpaces" class="target text-success">
+					<img class="ajax-loader" src="assets/giphy.gif">
+				</div>
+			</div>
+			<div class="col-md-6 text-center right-sidebar">
+				<div class="mini-title">
+					<i class="fa fa-map-marker-alt"></i><br>
+					Free places is
+				</div>
+				<div id="freeSpacesIs" class="target text-success">
+					<img class="ajax-loader" src="assets/giphy.gif">
+				</div>
+			</div>
+		</div>
+		<p class="note text-info">
+			<i class="fa fa-info"></i>
+			Please make sure the readings are confirmed first before you move or take into consideration
+		</p>
+	</div>
+
+	<script type="text/javascript" src="assets/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			setInterval(function(){
+				$.ajax({
+					url: 'processing.php',
+					type: 'post',
+					success: function(reading) {
+						var array_of_data = reading.split(',');
+
+						$('#freeSpaces').text(array_of_data.length);
+						$('#freeSpacesIs').css('font-size', '48px').text(array_of_data.join(' - '));
+					}
+				})
+			}, 1000)
+		});
+	</script>
+</body>
+</html>
