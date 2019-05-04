@@ -42,7 +42,7 @@ Hence, we concern in presenting an application that will be capable of providing
 Project Impact
 ------
 > On individuals 
--	Optimization for driver time, efforts and resources – e.g. car fuel.
+-	Optimization for driver time, efforts and resources – e.g. car fuel.--
 Through finding the suitable parking spot in the nearest parking lot. So, you won't be late on your meeting and appointments anymore
 > On community
 -	Traffic jam reduction. 
