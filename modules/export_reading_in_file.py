@@ -1,3 +1,6 @@
+# contributor: Ahmed Sayed Ahmed
+# -------------------------------
+
 def export_reading_in_file(array):
     if(len(array)):
         seperator = ','

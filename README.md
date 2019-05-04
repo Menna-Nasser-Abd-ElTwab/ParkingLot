@@ -35,6 +35,14 @@ Hence, we concern in presenting an application that will be capable of providing
 
 ---
 
+Note
+------
+Please keep in mind that the code was compiled at the beginning without the use `Github`
+and as a team we finally compiled the code with each and every one of us has his
+own mark `(at comments)` on the part he did in the project
+
+---
+
 License
 ------
 MIT

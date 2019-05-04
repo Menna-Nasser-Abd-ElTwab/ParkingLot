@@ -1,3 +1,6 @@
+# contributors: Ahmed Sayed
+# -------------------------------
+
 fn = "datasets/parking1.mp4"
 fn_yaml = "datasets/parking1.yml"
 fn_out = "datasets/output.avi"

@@ -24,9 +24,14 @@ from modules.export_reading_in_file import export_reading_in_file
 
 parking_bounding_rects = []
 
+# contributor: Menna
+# ------------------------
+
 # Read YAML data (parking space polygons)
 with open(fn_yaml, 'r') as stream:
     parking_data = yaml.load(stream)
+
+# ------------------------
 
 # Init parking data
 init_parking(parking_data, parking_bounding_rects)
@@ -40,10 +45,15 @@ while(cap.isOpened()):
     occupied = 0
     array_of_free_spaces = []
 
+    # contributor: Marwa & Esmat
+		# ------------------------
+
     # Read frame-by-frame
     video_cur_pos = cap.get(cv2.CAP_PROP_POS_MSEC) / 1000.0 # Current position of the video file in sec
     vv_current_frame = cap.get(cv2.CAP_PROP_POS_FRAMES) # Index of frame to be captured at the next
     ret, frame = cap.read()
+
+		# ------------------------
 
     if ret == False:
         print("Capture Error")
@@ -56,6 +66,9 @@ while(cap.isOpened()):
 
     # Detect parking (Background Subtraction)
     parking_detection(parking_bounding_rects, f_gray, parking_lot_state, parking_buffer, video_cur_pos, parking_data)
+
+    # contributor: AbdAllah
+		# ------------------------
 
     # Parking overlay
     if config['parking_lot_overlay']:
@@ -80,6 +93,8 @@ while(cap.isOpened()):
             cv2.putText(f_out, str(park['id']), (cent_id[0]+1, cent_id[1]-1), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255,255,255), 1, cv2.LINE_AA)
             cv2.putText(f_out, str(park['id']), (cent_id[0]-1, cent_id[1]+1), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255,255,255), 1, cv2.LINE_AA)
             cv2.putText(f_out, str(park['id']), cent_id, cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0,0,0), 1, cv2.LINE_AA)
+
+    # ------------------------
 
     # Display video
     cv2.imshow('Image processing project (Parking Lot)', f_out)

@@ -1,3 +1,6 @@
+# contributors: Marwa & Esmat
+# -------------------------------
+
 import numpy as np
 import cv2
 
