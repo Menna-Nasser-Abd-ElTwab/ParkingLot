@@ -1,0 +1,4 @@
+1- yaml
+2- numpy
+3- cv2
+4- threading
