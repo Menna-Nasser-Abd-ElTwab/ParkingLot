@@ -49,7 +49,7 @@ Project Impact
   <br/>As, the number of the cars circling around to find free parking spot ‘ll be reduced
 > On Environment
 -	The other plus side is the environmental impact.
-  <br\>The less drivers idle, cruise and search for parking, the less the negative impact on the environment. 
+  <br/>The less drivers idle, cruise and search for parking, the less the negative impact on the environment. 
   <br/>As, the decrement in number of cars turning around will also decrease the amount of vehicle oil burnt and by turn reduces the global ecological footprint.
 
 ---
