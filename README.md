@@ -38,6 +38,20 @@ Hence, we concern in presenting an application that will be capable of providing
   - If there is a free space for you or not?
   - where exactly that free spot in the parking lot to go direct to it saving your effort and time
 
+
+Project Impact
+------
+> On individuals 
+-	Optimization for driver time, efforts and resources – e.g. car fuel.
+Through finding the suitable parking spot in the nearest parking lot. So, you won't be late on your meeting and appointments anymore
+> On community
+-	Traffic jam reduction. 
+As, the number of the cars circling around to find free parking spot ‘ll be reduced
+> On Environment
+-	The other plus side is the environmental impact.
+The less drivers idle, cruise and search for parking, the less the negative impact on the environment. 
+As, the decrement in number of cars turning around will also decrease the amount of vehicle oil burnt and by turn reduces the global ecological footprint.
+
 ---
 
 Note
